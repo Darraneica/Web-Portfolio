@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word.com | Meanings & Definitions of English Words </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Poppins:ital,wght@0,400;0,600;1,200;1,600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+
+        :root{
+            --background: #111d5e;
+            --second-color: #b21f66;
+            --third-color: #f95959;
+            --fourth-color: #e3e3e3;
+        }
+
+        *{
+            box-sizing: border-box;
+            font-family: Poppins;
+        }
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        body{
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            background: whitesmoke;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+
+        }
+
+        header{
+            margin-top: -20px;
+            background: white;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        header a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .search-wrapper{
+            display: flex;
+            margin-left: -50px;
+        }
+
+        .grid{
+            display: grid;
+            grid-gap: 64px
+        }
+
+        .grid-column{
+            grid-template-columns: 1fr;
+        }
+
+        .grid-2-columns{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .grid-3-columns{
+            grid-template-columns: repeat(3, 1fr);
+        } 
+
+        .grid-3-columns-with-first-narrow{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .title{
+            text-align: center;
+            margin-left: 10px;
+        }
+
+
+        nav{
+            margin-left: 400px;
+            width: 400px;
+            margin-bottom: 10px;
+        }
+        
+        nav a{
+            margin-top: -40px;
+            text-decoration: none;
+            color: black;
+        }
+
+        nav a:hover{
+            font-weight: bolder;
+            color: #004097;
+        }
+        
+        .search-input{
+            width: 900px;
+            padding: 20px;
+            margin-left: 200px;
+            height: 80px;
+            border: 2px solid rgb(183, 182, 182);
+            border: none;
+            border-radius: 50px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+            color: black;
+        }
+
+        .search-wrapper button{
+            background: rgb(183, 182, 182);
+            font-size: 24px;
+            color: black;
+            position: relative;
+            left: -73px;
+            height: 80px;
+            padding: 10px;
+            border: none;
+            width: 150px;
+            height: 80px;
+            border: 1px solid rgb(183, 182, 182);
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        .search-wrapper input:hover{
+            border: 2px solid #004097;
+            
+        }
+
+        .search-wrapper button:hover{
+            border: 2px solid #004097;
+        }
+
+        .search-wrapper button:active{
+            color: white;
+            background: grey;
+        }
+
+        section{
+            margin-left: 120px;
+
+        }
+
+        section li{
+            list-style: none;
+        }
+
+        section a{
+            text-decoration: none;
+            color: #004097;
+        }
+
+
+        .define{
+            text-align: center;
+        }
+
+        .border-section{
+            border: 1px solid #004097;
+            padding: 80px;
+            width: 900px;
+            margin-left: 50px;
+        }
+
+        footer{
+            background:#4A4A4A;
+        }
+
+        footer a{
+            color: whitesmoke;
+        }
+
+        .footer-section li{
+            margin-top: 20px;
+            
+        }
+
+
+        @media(max-width:960px){
+        .search-input{
+            width: 400px;
+            margin-left: 100px;
+        }   .title{
+            text-align: center;
+            margin-left: -300px;
+            margin-top: 300px;
+        }
+
+        .title{
+            margin-bottom: -10px;
+        }
+
+        header{
+            margin-top: 20px;
+        }
+
+         .navi{
+            margin-left: -330px;
+            width: 400px;
+        }
+        section{
+            margin-left: 100px;
+        }
+        .border-section{
+            margin-right: 50px;
+        }
+        .border-section{
+            padding: 80px;
+            width: 400px;
+            margin-left: 0.5px;
+        }
+
+
+        .footer-section{
+            margin-left: 20px;
+        }
+
+        section a{
+            text-decoration: none;
+        }
+    
+    }     
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="grid">
+        <h1 class="text-center title mt-5"><a href="index.html">Dictionary</a>.com</h1>
+        <div class="search-wrapper text-center mt-5">
+            <form id="searchForm" class="search-wrapper text-center mt-5">
+            <input type="search" name="search" class="search-input" id="searchInput" placeholder="Search a word...">
+            <button type="submit">Search</button></form> 
+        </div>
+        <nav>
+            <div class="grid grid-3-columns text-center mt-4 navi">
+                <a href="https://www.grammarly.com/">Grammarly</a>
+                <a href="#">Writing Tips</a> 
+                <a href="#">Games</a>  
+            </div>   
+        </nav>
+    </header>
+    <section>
+        <div class="border-section mt-5" >
+        <h2 class="mt-1 mb-4" id="word"></h2>
+        <div class="grid grid-column">
+            <em id="type"></em>
+            <span id="definition"></span>     
+        </div>
+    </div>
+    </section>
+    <div style="clear: both">
+    </div>
+    <footer>
+        <section class="grid grid-3-columns-with-first-narrow footer-section mt-5">
+            <ul>
+                <li><a href="/index.html">Dictionary.com</a></li>
+                <li><a href="#">Thesaurus.com</a></li>
+                <li><a href="https://www.grammarly.com/">Grammarly</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Do Not Sell Info</a></li>
+            </ul>
+        </section>
+    </footer>       
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
