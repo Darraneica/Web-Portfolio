@@ -81,7 +81,7 @@ grid.griddy > i{
 header{
     background-image: linear-gradient( rgba(190, 186, 206, 0.9),
 #946E83),
-    url('footer.jpeg');
+    url(/images/footer.jpeg);
     background-repeat: no-repeat;
     text-align: center;
     padding: 200px 0;
@@ -259,7 +259,7 @@ footer {
         rgba(190, 186, 206, 0.9),
         #946E83
       ),
-      url("footer.jpeg");
+      url(/images/footer.jpeg);
   
     background-repeat: no-repeat;
     background-size: cover;
