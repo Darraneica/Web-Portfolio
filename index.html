@@ -4,68 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Portfolio - Darraneica Robinson</title>
-    <script src="https://kit.fontawesome.com/b5d9061a49.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+            <!--Header for navigation section.-->
+<header class="sticky-top" style="background-color: white; padding: 50px;">
     <div class="container">
-        <div class="row row-cols-md-auto justify-content-center nav">
-            <h6 class="col"><a href="index.html" class="active">Home</a></h6>
-            <h6 class="col"><a href="about.html">About</a></h6>
-            <h6 class="col"><a href="projects.html">Projects</a></h6>
-            <h6 class="col ms-5"><a href="hire-me.html"><button class="hire-btn">Hire Me</button></a></h6>
+    <div class="row row-cols-sm-auto justify-content-center mt-4">  
+            <h6 class="col"><a href="index.html">Home</a></h6>
+            <h6 class="col"><a href="#projects">Projects</a></h6>
+            <h6 class="col"><a href="#contact">Contact</a></h6>
+    </div>
+    </div>
+</header>
+
+            <!--Background & Intro section.-->
+
+<div class="container bg-section">
+    <div class="wrapper">
+    <div class="row text-center intro-section">
+        <h1>Hello. I'm Darraneica.</h1>
+        <h5>Junior Web Developer based in USA.</h5>
+        <div class="col">
+            <button class="resume-btn" style="background-color: #7071E8; width: 20%;"><a href="darraneica.pdf" target="_blank">View Work</a></button>
         </div>
-    </div> 
- </header>
-        <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-2 intro">
-                <div class="col bubble mb-3"><h6>Welcome!</h6></div>
-                <h1 class="col">Darraneica Robinson</h1>
-                <h5 class="col">Jr. Web Developer</h5>
-                <h6 class="col">darraneica@gmail.com</h6>
-                <h6 class="col">504.940.8578</h6>
+    </div>
+    </div>
+</div>
+
+            <!--Project section.-->
+<div class="container" id="projects">
+    <div class="row latest-section">
+        <div class="spacer"></div>
+        <h1 class="text-center mt-5">Latest Projects</h1>
+        <hr>
+        <span class="text-center mb-5">Kindly peruse the projects I have undertaken for your consideration.
+        </span>
+        <div class="col">
+            <div class="card " style="width:18rem; background-color: #F4F4F4;">
+                <div class="card-body">
+                    <h3 class="text-center">Basic</h3>
+                    <p class="card-text text-center" style="font-size: 12px;"> Explore a curated collection of HTML, CSS, and JavaScript projects showcasing proficiency in front-end web development. These projects demonstrate skills in responsive design, interactive interfaces, and dynamic functionality.
+                    </p>
+                    <div class="card-footer mt-4 mb-3" style="background-color: #7071E8;">
+                        <a href="https://effervescent-beignet-8caa2b.netlify.app/" target="_blank" class="text-center" style="text-decoration: none; color: black;"><p class="mt-3">View Basic Project</p></a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 image">
-                <div class="col"><img src="/images/profile.png" width="800" class="img-fluid d-none d-lg-block"></div>
+        </div>
+        <div class="col">
+            <div class="card" style="width:18rem; background-color: #F4F4F4;">
+                <div class="card-body">
+                    <h3 class="text-center">Intermediate</h3>
+                    <p class="card-text" style="font-size: 12px;">
+                        Discover an intermediate-level showcase featuring a notable Weather Project created with API integration. This project demonstrates advanced skills in HTML, CSS, and JavaScript, emphasizing proficiency in fetching and displaying real-time data. 
+                    </p>
+                    <div class="card-footer mt-4 mb-3" style="background-color: #7071E8;">
+                        <a href="https://regal-valkyrie-63039c.netlify.app/" target="_blank" class="text-center" style="text-decoration: none; color: black;"><p class="mt-3">View Intermediate Project</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width:18rem; background-color: #F4F4F4;">
+                <div class="card-body"> 
+                    <h3 class="text-center mb-4">Advanced</h3>
+                    <p class="card-text" style="font-size: 12px;">
+                        An advanced web development portfolio featuring standout projects. Demonstrating mastery in HTML, CSS, and JavaScript, this showcase highlights expertise in seamless API integration and advanced front-end development. 
+                    </p>
+                    <div class="card-footer mt-4 mb-3" style="background: #7071E8;">
+                        <a href="#" class="text-center" style="text-decoration: none; color: black;"><p class="mt-3">[Current Not Available]</p></a>
+                    </div>
+                </div>
+             
             </div>
         </div>
     </div>
-    <br>
-    <footer class="mt-5">
-        <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1 class="hire mt-2" style="font-size: 20px;">Get in Touch!</h1>
-                <hr class="hr">
-                <div class="col">
-                 <p class="hire" style="font-size: 12px;">Reach out if you want to work together. I am eager to start and will respond promptly.</p>   
+</div>
+                                <!--Skills Section-->
+<div class="container">
+    <div class="row latest-section">
+        <h1 class="text-center mt-5">What I Know</h1>
+        <hr>
+        <div class="col">
+            <div class="card" style="width:18rem; background-color: #F4F4F4;">
+                <div class="card-body">
+                     <h3 class="card-title text-center">Programming Languages</h3>
+                     <img src="/images/programming.png" alt="" class="card-img-top img-fluid">
+                     <p class="card-subtitle text-center" style="font-size: 12px;">Programming languages I have acquired.</p>
+                     <p class="card-text text-center" style="font-size: 12px;">
+                    <ul style="list-style: none;">
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>SQL</li>
+                        <br>
+                    </ul></p>
+                    </div>
                 </div>
             </div>
             <div class="col">
-                <h1 class="hire mt-2" style="font-size: 20px;">Socials</h1>
-                <hr class="hr">
-                <a href="/darraneica.pdf" target="_blank"><i class="fa-solid fa-file col"></i></a>
-                <a href="https://www.linkedin.com/in/darraneica-robinson-88599a89/" target="_blank"><i class="fa-brands fa-linkedin col"></i></a>
-                <a href="https://github.com/Darraneica" target="_blank"><i class="fa-brands fa-square-github col"></i></a>
-            </div>
-            <div class="col">
-                <h1 class="hire mt-2" style="font-size: 20px;">Telephone:</h1>
-                <hr class="hr">
-                <a href="tel:+15049408578" target="_blank" class="no-link" style="text-decoration: none;">
-                    <p class="hire" style="font-size: 12px;">504.940.8578</p></a>
-                    <a href="mailto:darraneica@gmail.com" target="_blank" class="no-link" style="text-decoration: none;"><p class="hire" style="font-size: 12px; text-decoration: none;">Darraneica@gmail.com</p></a>
-                <p class="hire" style="font-size: 12px;">Available: Monday - Friday, 8am - 3:30pm, CST</p>
-            </div>
+                <div class="card" style="width:18rem; background-color: #F4F4F4;">
+                    <div class="card-body">
+                         <h3 class="card-title text-center">Front End Development</h3>
+                         <img src="/images/frontend.png" alt="" class="card-img-top">
+                         <p class="card-text text-center mb-2" style="font-size: 12px;"> Since graduating college in February, I've delved into the dynamic world of front-end development. My foundation in HTML, CSS, and JavaScript has empowered me to create responsive and visually appealing web interfaces. Building on this, I've also gained proficiency in working with APIs, enhancing the interactivity and functionality of my projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:18rem; background-color: #F4F4F4;">
+                        <div class="card-body">
+                             <h3 class="card-title text-center">Back End Development</h3>
+                             <img src="/images/backend.png" alt="" class="card-img-top">
+                             <p class="card-text text-center mb-4" style="font-size: 12px;"> I studied software development in college, gaining expertise in Python, C++, SQL, data analytics, and project development. My education included a focus on the Software Development Life Cycle (SDLC). With this foundation, I am well-equipped to contribute to the creation of efficient and scalable back-end solutions.</p>
+                            </div>
+                        </div>
+                    </div>
         </div>
+</div>
+
+                        <!-- Availability announcement-->
+<div class="container hire-section">
+<section>
+    <div class="row text-center">
+        <div class="col">
+            <h1>Let's Work!</h1>
+            <h3>Thrilled to share that I'm actively seeking new web development opportunities!.</h3>
+            <h5>Let's connect! Open to freelance gigs, projects, or a full-time role. If you know of any opportunities, or just want to chat tech, drop me a message!</h5>
         </div>
-        <div class="row">
-            <div class="col">
-                <span class="acknowledge">This web Portfolio was created by Darraneica Robinson. It is <a href="http://">open-sourced</a>.</span>
-            </div>
-        </div>
-     </footer>
+    </div>
+</section>
+</div>
+             <!--Footer section.-->
+<footer id="contact">
+    <div class="row row-cols-md-auto justify-content-start footer-section">
+        <a href="https://www.linkedin.com/in/darraneica-robinson-88599a89/" target="_blank" style="text-decoration: none; color: black;">LinkedIn</a>
+        <a href="https://github.com/Darraneica" target="_blank" style="text-decoration: none; color: black;">GitHub</a>
+        <a href="darraneica.pdf" target="_blank" style="text-decoration: none; color: black;">Resume</a>
+        <a href="tel:+15049408578" target="_blank" style="text-decoration: none; color: black;">504.940.8578</a>
+        <a href="mailto:darraneica@gmail.com" target="_blank" style="text-decoration: none; color: black;">Darraneica@gmailcom</a>
+    </div>
+    <p style="text-align: center;">This portfolio was created by Darraneica Robinson and it is <a href="https://github.com/Darraneica" target="_blank" style="text-decoration: none; color: #000; font-weight: bolder;">open-sourced</a>.</p>
+</footer> 
 </body>
 </html>

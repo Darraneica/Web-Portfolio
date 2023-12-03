@@ -1,463 +1,145 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vina+Sans&display=swap');
 
 *{
-    max-width: 100vw;
+    max-width: 100%;
     margin: 0;
     padding: 0;
-    font-family: Nunito Sans;
-}
-
-body{
-    background-color: #526D82;
+    font-family: Poppins;
 }
 
 
-.header{
-        background-color: #27374D;
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-height: 100vh;
-    }
 
-.container{
+header a{
+    color: black;
+    text-decoration: none; 
+    transition: border-width 0.3s; 
+    border-bottom: 2px solid transparent;
+    padding: 20px;
+}
 
-    .active{
-     color: #fff;
-    }
-    
-    .nav h6{
-        margin-top: 45px;
-        margin-bottom: 20px;
-        font-size: 20px;
-        color: #DDE6ED;
-        transition: all 30ms ease-in-out;
-        padding: 5px;
-        border-bottom: 2px solid transparent;
-    }
-
-    .nav h6:hover{
-       border-bottom: 2px solid #9DB2BF;
-
-    }
-
-    h6 a{
-        text-decoration: none;
-        color: #9DB2BF;
-    }
-
-    h6 a:hover{
-        color: #DDE6ED;
-    }
+header a:hover{ 
+    color: #7071E8;
+    border-bottom-width: 1px;  
+    border-bottom: 2px solid black;
+}
 
 
 
- .hire-btn{
-        border: none;
-        font-size: 15px;
-        padding: 10px!important;
-        background-color: #9DB2BF;
-        color: #27374D;
-        border-radius: 5px;
-        margin-top: -10px;
-        width: 120px;
-        border-bottom: 2px solid transparent;
-    }
+.bg-section{
+    max-width: 100%;
+    padding: 100px;
+     background-color: #F4F4F4;
+}
 
-
-    .hire-btn:hover{
-        border-bottom: 2px solid #9DB2BF;
-        color: #DDE6ED;
-    }
-
-    .bubble{
-        margin-top: -10px;
-        background-color: #9DB2BF;
-        border-radius: 100px;
-        border-bottom-left-radius: 0;
-        width: 200px;
-        padding: 5px;
-        background-color: #27374D;
-        transition: all 30ms ease-out;
-    }
-
-    .bubble:hover{
-        color: #9DB2BF;
-    }
-
-    .bubble h6{
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    .intro{
-        margin-top: 110px;
-        margin-left: 40px;
-        color: #DDE6ED;
-    }
-
-    .intro h1{
-        font-weight: bolder;
-        font-size: 50px;
-    }
-
-    .intro h5{
-        font-weight: 900;
-    }
-
-    .intro h6{
-        font-weight:500;
-        font-size: 20px;
-
-    }
-    .col-md-4{
-        margin-top: 110px;
-    }
-    .col-md-4 i{
-        margin-left: 70px;
-        font-size: 30px;
-
-    }
-
-    .image{
-        margin-left: 400px;
-    
-    }
-
-    .social{
-        margin-top: -70px;
-        margin-left: 150px;
-        font-size: 30px;
-        color: #27374D;
-        transition: all 30ms ease;
-    }
-
-    i:hover{
-        color: #DDE6ED;
-    }
-
-    .social i{
-        margin-left: 4px;
-    }
+.intro-section{
+    max-width: 100%;
    
+    margin-top: 10px;
 
-    hr{
-        width: 50%;
-        height: 5px;
-    }
-    p{
-        width: 50%;
-    }
-
-    .about-header{
-        margin-top: 50px;
-    }
-
-    #about{
-        margin-top: -100px;
-        margin-right: 100px;
-    }
-
-    .hire-me{
-        margin-top: 100px;
-    }
-
-    .hire-line{
-        display: block;
-        margin: 0 auto;
-    }
-
-    .announce-img{
-        margin-top: -270px;
-        margin-left: 50px;
-    }
-
-    h1.hire{
-        color: #DDE6ED;
-    }
-
-    p.hire{
-        color: #9DB2BF;
-        font-size: 20px;
-    }
-
-    .btn{
-        background-color: #9DB2BF;
-        margin-left: 60px;
-    }
-
-    .col i{
-        margin-top: 10px;
-        margin-left: 5px;
-        font-size: 25px;
-        color: #9DB2BF;
-        transition: all 30ms ease;
-    }
-
-    .col i:hover{
-        color: #DDE6ED;
-
-    }
-
-    span{
-        color: #9DB2BF;
-    }
-
-    .hr{
-        color: #DDE6ED;
-    }
-
-    h6 {
-        color: #9DB2BF;
-    }
-
-    h4{
-        color: #9DB2BF;
-    }
-
-    h2{
-        color: #27374D;
+    h1{
+        font-size: 70px;
     }
 
     h5{
-        color: #9DB2BF;
+        margin-bottom: 50px;
+
     }
-   
-} 
+}
 
-footer{
-        background-color: #27374D;
-        .acknowledge{
-            margin-left: 400px;
-            color: #DDE6ED;
-        }
-    
+.spacer{
+    height: 20vh;
+}
+
+.projects-btn{
+    border: none;
+    padding: 8px;
+    margin-right: 30px;
+    width: fit-content;
+    font-size: 20px;
+}
+
+.resume-btn{
+    border: none;
+    padding: 8px;
+    width: fit-content;
+    font-size: 20px;
+}
+
+.resume-btn a{
+    color: black;
+    text-decoration: none;
+}
+
+.latest-section{
+    hr{
+        margin-bottom: 60px;
+        color: #7071E8;
+        height: 5px;
     }
+}
 
-    //adjust screen for smaller devices
+.card{
+    margin-left: 50px;
+    background-color: purple;
+}
 
-    @media only screen and (max-width: 960px){
-.header{
-    background-color: #27374D;
-    background-repeat: no-repeat;
-    background-size: cover;
+.skills-section{
+    background-color: #F4F4F4;
     max-width: 100%;
 }
 
-.container{
-
-.active{
- color: #fff;
-}
-
-.nav h6{
-    margin-top: 45px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    font-size: 20px;
-    color: #DDE6ED;
-    transition: all 30ms ease-in-out;
-    padding: 5px;
-    border-bottom: 2px solid transparent;
-}
-
-.nav h6:hover{
-   border-bottom: 2px solid #9DB2BF;
-
-}
-
-h6 a{
-    text-decoration: none;
-    color: #9DB2BF;
-}
-
-h6 a:hover{
-    color: #DDE6ED;
-}
-
-
-
-.hire-btn{
-    border: none;
-    font-size: 15px;
-    padding: 10px!important;
-    background-color: #9DB2BF;
-    color: #27374D;
-    border-radius: 5px;
-    margin-top: -10px;
-    margin-right: 10px;
-    width: 120px;
-    border-bottom: 2px solid transparent;
-    transition: border-width 0.3s;
-}
-
-
-.hire-btn:hover{
-    border-bottom: 1px solid #9DB2BF;
-
-    color: #DDE6ED;
-}
-
-.bubble{
-    margin-top: -10px;
-    background-color: #9DB2BF;
-    border-radius: 100px;
-    border-bottom-left-radius: 0;
-    width: 200px;
-    padding: 5px;
-    background-color: #27374D;
-    transition: all 30ms ease-out;
-}
-
-.bubble:hover{
-    color: #9DB2BF;
-}
-
-.bubble h6{
-    text-align: center;
-    margin-top: 10px;
-}
-
-.intro{
-    margin-top: 110px;
-    margin-right: 50px;
-    color: #DDE6ED;
-}
-
-.intro h1{
-    font-weight: bolder;
-    font-size: 50px;
-}
-
-.intro h5{
-    font-weight: 900;
-}
-
-.intro h6{
-    font-weight:500;
-    font-size: 20px;
-
-}
-.col-md-4{
-    margin-top: 105px;
-}
-.col-md-4 i{
-    margin-left: 70px;
-    font-size: 30px;
-
-}
-
-.image{
-    margin-left: 400px;
-
-}
-
-.social{
-    margin-top: -70px;
-    margin-left: 150px;
-    font-size: 30px;
-    color: #27374D;
-    transition: all 30ms ease;
-}
-
-i:hover{
-    color: #DDE6ED;
-}
-
-.social i{
-    margin-left: 4px;
-}
-
-
-hr{
-    width: 50%;
-    height: 5px;
-}
-p{
-    width: 50%;
-}
-
-.about-header{
+.hire-section{
     margin-top: 50px;
-}
+    background-color: #7071E8;
+    padding: 100px;
+    max-width: 100%;
 
-#about{
-    margin-top: -100px;
-    margin-right: 100px;
-}
-
-.hire-me{
-    margin-top: 100px;
-}
-
-.hire-line{
-    display: block;
-    margin: 0 auto;
-}
-
-.announce-img{
-    margin-top: -270px;
-    margin-left: 50px;
-}
-
-h1.hire{
-    color: #DDE6ED;
-}
-
-p.hire{
-    color: #9DB2BF;
-    font-size: 20px;
-}
-
-.btn{
-    background-color: #9DB2BF;
-    margin-left: 60px;
-}
-
-.col i{
-    margin-top: 10px;
-    margin-left: 5px;
-    font-size: 25px;
-    color: #9DB2BF;
-    transition: all 30ms ease;
-}
-
-.col i:hover{
-    color: #DDE6ED;
-
-}
-
-span{
-    color: #9DB2BF;
-}
-
-.hr{
-    color: #DDE6ED;
-}
-
-h6 {
-    color: #9DB2BF;
-}
-
-h4{
-    color: #9DB2BF;
-}
-
-h2{
-    color: #27374D;
-}
-
-h5{
-    color: #9DB2BF;
-}
-
-
-} 
-
-span.acknowledge{
-    margin-left: 20px;
-    font-size: 12px;
-}  
+    h1{
+        margin-top: -50px;
     }
-    
+    h3{
+        margin-top: 30px;
+    }
+}
+
+
+footer{
+
+    padding: 10px;
+    margin-top: 20px;
+
+    .footer-section{
+        margin-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+}
+
+                                    //adjustments for screens.
+
+@media(max-width: 960px){
+
+
+    .intro-section h1{
+        font-size: 50px;
+    }
+
+    .resume-btn{
+        border: none;
+        padding: 8px;
+        width: fit-content;
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width: 680px){
+    .card{
+        margin-left: 100px;
+    }
+
+}
+
+
+
 
